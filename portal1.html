@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portal.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="main-header">
+            <header>
+                <h1 id="title">USTACKY</h1>
+                <a href="#" id="span">Portal</a>
+                <a href="index.html" id="dashboard">Dashboard</a>
+            </header>
+        </div>
+
+        <div id="portal-table">
+            <div class="form-container">
+                <h1 id="form-heading">Student Portal Form</h1>
+                <span>Please fill in all required information</span>
+
+                <div class="grey-div">Personal information</div>
+
+                
+                    <div class="flex-container">
+                        <form action="formProcessor.php" method="POST">
+                        <div class="info-form">
+                            <label for="image">Upload Image:</label>
+                            <input 
+                                type="file" 
+                                name="image_file" 
+                                id="image-file"
+                                placeholder="No file chosen">
+                            <label for="firstName">FirstName</label>
+                            <input
+                                type="text" 
+                                name="firstname" 
+                                id="firstname"
+                                placeholder="Enter FirstName">
+                            <label for="lastName">LastName</label>
+                            <input
+                                type="text" 
+                                name="lastname" 
+                                id="lastname"
+                                placeholder="Enter LastName">
+                            <label for="DOB">Date of Birth</label>
+                            <input
+                                type="date"
+                                name="dateOfBirth" 
+                                id="date">
+                            <label for="telephone">Phone Number</label>
+                            <input 
+                                type="tel" 
+                                name="telephone" 
+                                id="telephone"
+                                placeholder="Enter PhoneNumber">
+                            <label for="state">State of Origin</label>
+                            <select name="state" id="state" aria-placeholder="Select State">
+                                <option value="Anambra">Anambra</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Abuja">Abuja</option>
+                                <option value="Enugu">Enugu</option>
+                                <option value="Kano">Kano</option>
+                                <option value="Kaduna">Kaduna</option>
+                                <option value="Ogun">Ogun</option>
+                                <option value="Oyo">Oyo</option>
+                                <option value="Imo">Imo</option>
+                                <option value="Edo">Edo</option>
+                                <option value="Delta">Delta</option>
+                            </select>
+                            <label for="kin">Next of Kin</label>
+                            <input 
+                                type="text" 
+                                name="kin" 
+                                id="Kin"
+                                placeholder="Enter the name of your next of kin">
+                        </div>
+                       <!-- </form>
+                
+
+                        <form action="formProcessor.php" method="POST" class="info-Form"> -->
+                        <div class="info-form">
+                            <label for="middlename" class="middlename">MiddleName</label>
+                            <input 
+                                type="text" 
+                                name="middlename" 
+                                id="middlename"
+                                placeholder="Enter MiddleName">
+                                <label for="email">Email</label>
+                            <input 
+                                type="email" 
+                                name="email" 
+                                id="email"
+                                placeholder="Enter Email Address">
+
+                            <div id="checkbox">
+                                <label for="gender">Male</label>
+                            <input 
+                                type="radio"
+                                name="gender"
+                                value="male" 
+                                id="male">
+                                <label for="gender">Female</label>
+                            <input 
+                                type="radio"
+                                name="gender" 
+                                value="female" 
+                                id="female">
+                            </div>
+                            
+                                <label for="address">Address</label>
+                            <textarea 
+                                name="address" 
+                                id="address" 
+                                cols="30" 
+                                rows="3"></textarea>
+                            <label for="LGA">Local Government</label>
+                                <select name="lga" id="lga">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                        </div>
+                       <!-- </form> -->
+                    </div>
+
+                <div class="grey-div">Academic Related information</div>
+
+                   <!-- <form action="formProcessor.php" method="POST" class="info-Form"> -->
+                    <div class="info-form">
+                        <label for="jambScore">Jamb Score</label>
+                        <input 
+                            type="text"
+                            name="score" 
+                            id="score"
+                            placeholder="Enter Jamb Score">
+                    <!--</form>-->
+                    <button type="submit" class="submit-btn" name="Submit">submit</button> 
+                    </div>        
+            </div>
+        </form><!--Only one form opening and closing tag, the divs remain there for styling, hopefully it works, I don't have your css to confirm. Gave the submit button a name so that it'll properly trigger formprocessor-->
+        </div>
+        
+        <div id="footer">
+            <footer>
+                <p>All right reserved @ustacky 2021</p>
+            </footer>
+        </div>
+
+    </div>
+
+</body>
+</html>

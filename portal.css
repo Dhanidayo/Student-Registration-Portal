@@ -1,0 +1,109 @@
+.form-container {
+    width: 80%;
+    margin: 0 auto 20px;
+    height: 100vh;
+    background-color: rgb(193, 214, 223);    
+}
+
+#form-heading {
+    width: 100%;
+    padding: 20px;
+    color: rgb(6, 34, 109);
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+span {
+    font-size: 14px;
+    font-style: italic;
+    color: #f00;
+    padding-top: 0px;
+    margin-left: 13px;
+}
+
+.grey-div {
+    width: 100%;
+    margin: auto;
+    background-color: #666;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    grid-column: span 2;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* form {
+    width: 100%;
+} */
+
+.info-Form{
+    width: 45%;
+    margin: 15px 20px;
+    display: flex;
+
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+label {
+    color: rgb(6, 34, 109);
+    font-family: serif;
+}
+
+input, select {
+    margin: 8px;
+    padding: 6px;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 2px 2px 2px 2px rgb(146, 146, 194);
+    outline: none;
+    border: none;
+}
+
+input[type="file"] {
+    background-color: #fff;
+}
+
+/* .middlename {
+    margin-top: 100px;
+} */
+
+#checkbox {
+    margin: 50px 0px;
+}
+
+textarea {
+    margin: 5px;
+}
+
+.submit-btn {
+    position: relative;
+    padding: 10px;
+    width: 30%;
+    border: none;
+    margin: auto;
+    background-color: #666;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+}
+
+.submit-btn:hover {
+    border: none;
+    opacity: 0.9;
+}
+
+.submit-btn:focus {
+    outline: none;
+    border: none;
+}
