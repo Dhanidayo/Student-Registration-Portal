@@ -1,6 +1,6 @@
 <?php
 include("connection.php");
-// You can write the code to render for each student's profile here
+//code to render for each student's profile
 if(isset($_GET["id"])):
     $id = $_GET["id"];
     // echo "Showing result for id $id";

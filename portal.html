@@ -35,6 +35,8 @@
                                 type="file" 
                                 name="image_file" 
                                 id="image-file"
+                                accept="image/*"
+                                required
                                 placeholder="No file chosen">
                             <label for="firstName">FirstName</label>
                             <input
@@ -98,14 +100,14 @@
                                 id="email"
                                 placeholder="Enter Email Address">
 
-                            <div id="checkbox">
-                                <label for="gender">Male</label>
+                            <div class="radio-inline">
+                                <label for="gender" class="radio-inline">Male</label>
                             <input 
                                 type="radio"
                                 name="gender"
                                 value="male" 
                                 id="male">
-                                <label for="gender">Female</label>
+                                <label for="gender" class="radio-inline">Female</label>
                             <input 
                                 type="radio"
                                 name="gender" 
@@ -142,7 +144,7 @@
                             id="score"
                             placeholder="Enter Jamb Score">
                     <!--</form>-->
-                    <button type="submit" class="submit-btn" name="Submit">submit</button> 
+                    <button type="submit" class="submit-btn" name="Submit">Submit</button> 
                     </div>        
             </div>
         </form><!--Only one form opening and closing tag, the divs remain there for styling, hopefully it works, I don't have your css to confirm. Gave the submit button a name so that it'll properly trigger formprocessor-->
